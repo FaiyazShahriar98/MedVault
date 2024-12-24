@@ -1,0 +1,40 @@
+<!-- donation.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tooplate-style.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+<script>
+    fetch("navbar.php").then(response => response.text()).then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+    </script>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Support MediVault</h2>
+        <p class="text-center">Your donations help us provide better healthcare services.</p>
+        <form action="process_donation.php" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="amount">Donation Amount:</label>
+                <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter donation amount">
+            </div>
+            <button type="submit" class="btn btn-primary">Donate</button>
+        </form>
+    </div>
+</body>
+</html>

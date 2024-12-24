@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>MediVault - News Detail</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="Stay updated with MediVault's latest news and breakthroughs.">
+     <meta name="keywords" content="MediVault, Healthcare, News, Innovation">
+     <meta name="author" content="MediVault">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/tooplate-style.css">
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- HEADER -->
+     <header>
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-4 col-sm-3">
+                         <p>Welcome to MediVault News</p>
+                    </div>
+                         
+                    <div class="col-md-8 col-sm-9 text-align-right">
+                         <span class="phone-icon"><i class="fa fa-phone"></i>+880 174-197-9133</span>
+                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> Open Mon-Fri: 6:00 AM - 10:00 PM</span>
+                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">info@medivault.com</a></span>
+                    </div>
+               </div>
+          </div>
+     </header>
+
+     <!-- MENU -->
+     <div id="navbar-placeholder"></div>
+     <script>
+         fetch("navbar.php").then(response => response.text()).then(data => {
+             document.getElementById("navbar-placeholder").innerHTML = data;
+         });
+     </script>
+     
+
+     <!-- NEWS DETAIL -->
+     <section id="news-detail" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-8 col-sm-7">
+                         <div class="news-detail-thumb">
+                              <div class="news-image">
+                                   <img src="images/news-image3.jpg" class="img-responsive" alt="Medical Breakthrough">
+                              </div>
+                              <h3>MediVault Launches AI-Powered Health Assistant</h3>
+                              <p>MediVault is thrilled to announce the launch of its groundbreaking AI-Powered Health Assistant, designed to revolutionize how patients and healthcare providers interact. This innovative tool leverages artificial intelligence to provide personalized health recommendations, improve diagnosis accuracy, and streamline appointment management.</p>
+                              <blockquote>"This is a significant step toward making healthcare accessible, efficient, and patient-centric," said Dr. Sarah Collins, Chief Medical Officer at MediVault.</blockquote>
+                              <p>The AI-powered assistant integrates seamlessly into MediVault's existing platform, allowing users to receive real-time health insights based on their medical history, current symptoms, and health goals. From reminding patients about medication schedules to suggesting lifestyle adjustments, the assistant acts as a comprehensive healthcare partner.</p>
+                              
+                              <ul>
+                                   <li>24/7 availability for health-related queries</li>
+                                   <li>Accurate symptom analysis and risk assessments</li>
+                                   <li>Improved communication between patients and providers</li>
+                              </ul>
+
+                              <p>MediVault's commitment to innovation ensures that this new feature adheres to strict privacy and security standards. Patient data is encrypted and processed within a secure environment to guarantee confidentiality.</p>
+                              <div class="news-social-share">
+                                   <h4>Share this story</h4>
+                                   <a href="#" class="btn btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
+                                   <a href="#" class="btn btn-success"><i class="fa fa-twitter"></i> Twitter</a>
+                                   <a href="#" class="btn btn-danger"><i class="fa fa-google-plus"></i> Google+</a>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-5">
+                         <div class="news-sidebar">
+                              <div class="news-author">
+                                   <h4>About the author</h4>
+                                   <p>Dr. Sarah Collins is an experienced healthcare professional dedicated to leveraging technology to improve patient outcomes.</p>
+                              </div>
+
+                              <div class="recent-post">
+                                   <h4>Recent Posts</h4>
+                                   <div class="media">
+                                        <div class="media-object pull-left">
+                                             <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
+                                        </div>
+                                        <div class="media-body">
+                                             <h4 class="media-heading"><a href="#">The Future of Telemedicine</a></h4>
+                                        </div>
+                                   </div>
+
+                                   <div class="media">
+                                        <div class="media-object pull-left">
+                                             <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
+                                        </div>
+                                        <div class="media-body">
+                                             <h4 class="media-heading"><a href="#">How AI is Changing Healthcare</a></h4>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="news-categories">
+                                   <h4>Categories</h4>
+                                   <li><a href="#"><i class="fa fa-angle-right"></i> Innovation</a></li>
+                                   <li><a href="#"><i class="fa fa-angle-right"></i> Technology</a></li>
+                                   <li><a href="#"><i class="fa fa-angle-right"></i> Healthcare</a></li>
+                              </div>
+
+                              <div class="news-ads sidebar-ads">
+                                   <h4>Featured Resources</h4>
+                                   <p>Explore our guide on telemedicine and how it’s transforming modern healthcare.</p>
+                              </div>
+
+                              <div class="news-tags">
+                                   <h4>Tags</h4>
+                                   <li><a href="#">AI</a></li>
+                                   <li><a href="#">Healthcare</a></li>
+                                   <li><a href="#">Innovation</a></li>
+                                   <li><a href="#">Technology</a></li>
+                                   <li><a href="#">Security</a></li>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb"> 
+                              <h4>Contact Info</h4>
+                              <p>Feel free to reach out for more information about MediVault's services.</p>
+                              <div class="contact-info">
+                                   <p><i class="fa fa-phone"></i> 010-070-0170</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@medivault.com</a></p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h4>Latest News</h4>
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>AI in Healthcare</h5></a>
+                                        <span>December 24, 2024</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4>Opening Hours</h4>
+                                   <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
+                                   <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
+                                   <p>Sunday <span>Closed</span></p>
+                              </div> 
+
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </footer>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.sticky.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/custom.js"></script>
+</body>
+</html>

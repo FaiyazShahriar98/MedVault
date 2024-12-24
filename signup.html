@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up - MediVault</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/tooplate-style.css">
+    <style>
+        /* Custom styling for the form box */
+        .signup-box {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin-top: 50px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+   
+<div id="navbar-placeholder"></div>
+<script>
+    fetch("navbar.php").then(response => response.text()).then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+
+    <!-- Sign-Up Form -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="signup-box">
+                    <h2 class="text-center">Sign Up</h2>
+                    <form id="signup-form" action="php/signup_process.php" method="POST">
+                        <div class="form-group">
+                            <label for="username">Full Name</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+                            <span id="password-error" class="error-message"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                        <p class="text-center mt-3">Already have an account? <a href="login.html">Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        // Client-side password confirmation validation
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm_password').value;
+            const errorElement = document.getElementById('password-error');
+
+            if (password !== confirmPassword) {
+                event.preventDefault(); // Stop form submission
+                errorElement.textContent = 'Passwords do not match.';
+            } else {
+                errorElement.textContent = ''; // Clear error message
+            }
+        });
+    </script>
+</body>
+</html>
